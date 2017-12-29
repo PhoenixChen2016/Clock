@@ -4,696 +4,177 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Clock"
-        xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing" x:Class="Clock.MainWindow"
-        mc:Ignorable="d"
+		xmlns:sys="clr-namespace:System;assembly=mscorlib"
+		xmlns:col="clr-namespace:System.Collections;assembly=mscorlib"
+        xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing" x:Class="Clock.MainWindow"    
+		mc:Ignorable="d"
         Title="MainWindow" Height="600" Width="600">
+	<Window.Resources>
+		<ResourceDictionary>
+			<col:ArrayList x:Key="Angles">
+				<sys:Int32>0</sys:Int32>
+				<sys:Int32>6</sys:Int32>
+				<sys:Int32>12</sys:Int32>
+				<sys:Int32>18</sys:Int32>
+				<sys:Int32>24</sys:Int32>
+				<sys:Int32>30</sys:Int32>
+				<sys:Int32>36</sys:Int32>
+				<sys:Int32>42</sys:Int32>
+				<sys:Int32>48</sys:Int32>
+				<sys:Int32>54</sys:Int32>
+				<sys:Int32>60</sys:Int32>
+				<sys:Int32>66</sys:Int32>
+				<sys:Int32>72</sys:Int32>
+				<sys:Int32>78</sys:Int32>
+				<sys:Int32>84</sys:Int32>
+				<sys:Int32>90</sys:Int32>
+				<sys:Int32>96</sys:Int32>
+				<sys:Int32>102</sys:Int32>
+				<sys:Int32>108</sys:Int32>
+				<sys:Int32>114</sys:Int32>
+				<sys:Int32>120</sys:Int32>
+				<sys:Int32>126</sys:Int32>
+				<sys:Int32>132</sys:Int32>
+				<sys:Int32>138</sys:Int32>
+				<sys:Int32>144</sys:Int32>
+				<sys:Int32>150</sys:Int32>
+				<sys:Int32>156</sys:Int32>
+				<sys:Int32>162</sys:Int32>
+				<sys:Int32>168</sys:Int32>
+				<sys:Int32>174</sys:Int32>
+				<sys:Int32>180</sys:Int32>
+				<sys:Int32>186</sys:Int32>
+				<sys:Int32>192</sys:Int32>
+				<sys:Int32>198</sys:Int32>
+				<sys:Int32>204</sys:Int32>
+				<sys:Int32>210</sys:Int32>
+				<sys:Int32>216</sys:Int32>
+				<sys:Int32>222</sys:Int32>
+				<sys:Int32>228</sys:Int32>
+				<sys:Int32>234</sys:Int32>
+				<sys:Int32>240</sys:Int32>
+				<sys:Int32>246</sys:Int32>
+				<sys:Int32>252</sys:Int32>
+				<sys:Int32>258</sys:Int32>
+				<sys:Int32>264</sys:Int32>
+				<sys:Int32>270</sys:Int32>
+				<sys:Int32>276</sys:Int32>
+				<sys:Int32>282</sys:Int32>
+				<sys:Int32>288</sys:Int32>
+				<sys:Int32>294</sys:Int32>
+				<sys:Int32>300</sys:Int32>
+				<sys:Int32>306</sys:Int32>
+				<sys:Int32>312</sys:Int32>
+				<sys:Int32>318</sys:Int32>
+				<sys:Int32>324</sys:Int32>
+				<sys:Int32>330</sys:Int32>
+				<sys:Int32>336</sys:Int32>
+				<sys:Int32>342</sys:Int32>
+				<sys:Int32>348</sys:Int32>
+				<sys:Int32>354</sys:Int32>
+			</col:ArrayList>
+			<col:ArrayList x:Key="Angles2">
+				<sys:Int32>0</sys:Int32>
+				<sys:Int32>30</sys:Int32>
+				<sys:Int32>60</sys:Int32>
+				<sys:Int32>90</sys:Int32>
+				<sys:Int32>120</sys:Int32>
+				<sys:Int32>150</sys:Int32>
+				<sys:Int32>180</sys:Int32>
+				<sys:Int32>210</sys:Int32>
+				<sys:Int32>240</sys:Int32>
+				<sys:Int32>270</sys:Int32>
+				<sys:Int32>300</sys:Int32>
+				<sys:Int32>330</sys:Int32>
+			</col:ArrayList>
+		</ResourceDictionary>
+	</Window.Resources>
 	<Grid>
-		<Grid Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="500" Height="500">
-			<ed:Arc ArcThickness="1" ArcThicknessUnit="Percent" EndAngle="360" Fill="#FFF4F4F5" Height="500" Stretch="None" Stroke="Black" VerticalAlignment="Center" Width="500" HorizontalAlignment="Center"/>
-			<Grid HorizontalAlignment="Center" Height="250" VerticalAlignment="Top" Width="5" Margin="0" RenderTransformOrigin="0.5,1">
-				<Rectangle Fill="Black" Height="15" Stroke="Black" VerticalAlignment="Top" Margin="0,15,0,0"/>
-			</Grid>
-			<Grid HorizontalAlignment="Center" Height="250" VerticalAlignment="Top" Width="5" Margin="0" RenderTransformOrigin="0.5,1">
-				<Grid.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform Angle="90"/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Grid.RenderTransform>
-				<Rectangle Fill="Black" Height="15" Stroke="Black" VerticalAlignment="Top" Margin="0,15,0,0"/>
-			</Grid>
-			<Grid HorizontalAlignment="Center" Height="250" VerticalAlignment="Top" Width="5" Margin="0" RenderTransformOrigin="0.5,1">
-				<Grid.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform Angle="180"/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Grid.RenderTransform>
-				<Rectangle Fill="Black" Height="15" Stroke="Black" VerticalAlignment="Top" Margin="0,15,0,0"/>
-			</Grid>
-			<Grid HorizontalAlignment="Center" Height="250" VerticalAlignment="Top" Width="5" Margin="0" RenderTransformOrigin="0.5,1">
-				<Grid.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform Angle="270"/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Grid.RenderTransform>
-				<Rectangle Fill="Black" Height="15" Stroke="Black" VerticalAlignment="Top" Margin="0,15,0,0"/>
-			</Grid>
-			<Grid HorizontalAlignment="Center" Height="250" VerticalAlignment="Top" Width="3" Margin="0" RenderTransformOrigin="0.5,1">
-				<Grid.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform Angle="30"/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Grid.RenderTransform>
-				<Rectangle Fill="Black" Height="8" Stroke="Black" VerticalAlignment="Top" Margin="0,23,0,0" RenderTransformOrigin="0.5,0.5"/>
-			</Grid>
-			<Grid HorizontalAlignment="Center" Height="250" VerticalAlignment="Top" Width="3" Margin="248.5,0" RenderTransformOrigin="0.5,1">
-				<Grid.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform Angle="60"/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Grid.RenderTransform>
-				<Rectangle Fill="Black" Height="8" Stroke="Black" VerticalAlignment="Top" Margin="0,23,0,0" RenderTransformOrigin="0.5,0.5"/>
-			</Grid>
-			<Grid HorizontalAlignment="Center" Height="250" VerticalAlignment="Top" Width="3" Margin="248.5,0" RenderTransformOrigin="0.5,1">
-				<Grid.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform Angle="120"/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Grid.RenderTransform>
-				<Rectangle Fill="Black" Height="8" Stroke="Black" VerticalAlignment="Top" Margin="0,23,0,0" RenderTransformOrigin="0.5,0.5"/>
-			</Grid>
-			<Grid HorizontalAlignment="Center" Height="250" VerticalAlignment="Top" Width="3" Margin="248.5,0" RenderTransformOrigin="0.5,1">
-				<Grid.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform Angle="150"/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Grid.RenderTransform>
-				<Rectangle Fill="Black" Height="8" Stroke="Black" VerticalAlignment="Top" Margin="0,23,0,0" RenderTransformOrigin="0.5,0.5"/>
-			</Grid>
-			<Grid HorizontalAlignment="Center" Height="250" VerticalAlignment="Top" Width="3" Margin="248.5,0" RenderTransformOrigin="0.5,1">
-				<Grid.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform Angle="210"/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Grid.RenderTransform>
-				<Rectangle Fill="Black" Height="8" Stroke="Black" VerticalAlignment="Top" Margin="0,23,0,0" RenderTransformOrigin="0.5,0.5"/>
-			</Grid>
-			<Grid HorizontalAlignment="Center" Height="250" VerticalAlignment="Top" Width="3" Margin="248.5,0" RenderTransformOrigin="0.5,1">
-				<Grid.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform Angle="240"/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Grid.RenderTransform>
-				<Rectangle Fill="Black" Height="8" Stroke="Black" VerticalAlignment="Top" Margin="0,23,0,0" RenderTransformOrigin="0.5,0.5"/>
-			</Grid>
-			<Grid HorizontalAlignment="Center" Height="250" VerticalAlignment="Top" Width="3" Margin="248.5,0" RenderTransformOrigin="0.5,1">
-				<Grid.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform Angle="300"/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Grid.RenderTransform>
-				<Rectangle Fill="Black" Height="8" Stroke="Black" VerticalAlignment="Top" Margin="0,23,0,0" RenderTransformOrigin="0.5,0.5"/>
-			</Grid>
-			<Grid HorizontalAlignment="Center" Height="250" VerticalAlignment="Top" Width="3" Margin="248.5,0" RenderTransformOrigin="0.5,1">
-				<Grid.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform Angle="330"/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Grid.RenderTransform>
-				<Rectangle Fill="Black" Height="8" Stroke="Black" VerticalAlignment="Top" Margin="0,23,0,0" RenderTransformOrigin="0.5,0.5"/>
-			</Grid>
-			<Grid HorizontalAlignment="Center" Height="250" VerticalAlignment="Top" Width="3" Margin="248.5,0" RenderTransformOrigin="0.5,1">
-				<Grid.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform Angle="6"/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Grid.RenderTransform>
-				<Rectangle Fill="Black" Height="5" Stroke="Black" VerticalAlignment="Top" Margin="0,26,0,0" RenderTransformOrigin="0.5,0.5"/>
-			</Grid>
-			<Grid HorizontalAlignment="Center" Height="250" VerticalAlignment="Top" Width="3" Margin="248.5,0" RenderTransformOrigin="0.5,1">
-				<Grid.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform Angle="12"/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Grid.RenderTransform>
-				<Rectangle Fill="Black" Height="5" Stroke="Black" VerticalAlignment="Top" Margin="0,26,0,0" RenderTransformOrigin="0.5,0.5"/>
-			</Grid>
-			<Grid HorizontalAlignment="Center" Height="250" VerticalAlignment="Top" Width="3" Margin="248.5,0" RenderTransformOrigin="0.5,1">
-				<Grid.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform Angle="18"/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Grid.RenderTransform>
-				<Rectangle Fill="Black" Height="5" Stroke="Black" VerticalAlignment="Top" Margin="0,26,0,0" RenderTransformOrigin="0.5,0.5"/>
-			</Grid>
-			<Grid HorizontalAlignment="Center" Height="250" VerticalAlignment="Top" Width="3" Margin="248.5,0" RenderTransformOrigin="0.5,1">
-				<Grid.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform Angle="24"/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Grid.RenderTransform>
-				<Rectangle Fill="Black" Height="5" Stroke="Black" VerticalAlignment="Top" Margin="0,26,0,0" RenderTransformOrigin="0.5,0.5"/>
-			</Grid>
-			<Grid HorizontalAlignment="Center" Height="250" VerticalAlignment="Top" Width="3" Margin="248.5,0" RenderTransformOrigin="0.5,1">
-				<Grid.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform Angle="36"/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Grid.RenderTransform>
-				<Rectangle Fill="Black" Height="5" Stroke="Black" VerticalAlignment="Top" Margin="0,26,0,0" RenderTransformOrigin="0.5,0.5"/>
-			</Grid>
-			<Grid HorizontalAlignment="Center" Height="250" VerticalAlignment="Top" Width="3" Margin="248.5,0" RenderTransformOrigin="0.5,1">
-				<Grid.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform Angle="42"/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Grid.RenderTransform>
-				<Rectangle Fill="Black" Height="5" Stroke="Black" VerticalAlignment="Top" Margin="0,26,0,0" RenderTransformOrigin="0.5,0.5"/>
-			</Grid>
-			<Grid HorizontalAlignment="Center" Height="250" VerticalAlignment="Top" Width="3" Margin="248.5,0" RenderTransformOrigin="0.5,1">
-				<Grid.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform Angle="48"/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Grid.RenderTransform>
-				<Rectangle Fill="Black" Height="5" Stroke="Black" VerticalAlignment="Top" Margin="0,26,0,0" RenderTransformOrigin="0.5,0.5"/>
-			</Grid>
-			<Grid HorizontalAlignment="Center" Height="250" VerticalAlignment="Top" Width="3" Margin="248.5,0" RenderTransformOrigin="0.5,1">
-				<Grid.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform Angle="54"/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Grid.RenderTransform>
-				<Rectangle Fill="Black" Height="5" Stroke="Black" VerticalAlignment="Top" Margin="0,26,0,0" RenderTransformOrigin="0.5,0.5"/>
-			</Grid>
-			<Grid HorizontalAlignment="Center" Height="250" VerticalAlignment="Top" Width="3" Margin="248.5,0" RenderTransformOrigin="0.5,1">
-				<Grid.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform Angle="66"/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Grid.RenderTransform>
-				<Rectangle Fill="Black" Height="5" Stroke="Black" VerticalAlignment="Top" Margin="0,26,0,0" RenderTransformOrigin="0.5,0.5"/>
-			</Grid>
-			<Grid HorizontalAlignment="Center" Height="250" VerticalAlignment="Top" Width="3" Margin="248.5,0" RenderTransformOrigin="0.5,1">
-				<Grid.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform Angle="72"/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Grid.RenderTransform>
-				<Rectangle Fill="Black" Height="5" Stroke="Black" VerticalAlignment="Top" Margin="0,26,0,0" RenderTransformOrigin="0.5,0.5"/>
-			</Grid>
-			<Grid HorizontalAlignment="Center" Height="250" VerticalAlignment="Top" Width="3" Margin="248.5,0" RenderTransformOrigin="0.5,1">
-				<Grid.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform Angle="78"/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Grid.RenderTransform>
-				<Rectangle Fill="Black" Height="5" Stroke="Black" VerticalAlignment="Top" Margin="0,26,0,0" RenderTransformOrigin="0.5,0.5"/>
-			</Grid>
-			<Grid HorizontalAlignment="Center" Height="250" VerticalAlignment="Top" Width="3" Margin="248.5,0" RenderTransformOrigin="0.5,1">
-				<Grid.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform Angle="84"/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Grid.RenderTransform>
-				<Rectangle Fill="Black" Height="5" Stroke="Black" VerticalAlignment="Top" Margin="0,26,0,0" RenderTransformOrigin="0.5,0.5"/>
-			</Grid>
-			<Grid HorizontalAlignment="Center" Height="250" VerticalAlignment="Top" Width="3" Margin="248.5,0" RenderTransformOrigin="0.5,1">
-				<Grid.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform Angle="96"/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Grid.RenderTransform>
-				<Rectangle Fill="Black" Height="5" Stroke="Black" VerticalAlignment="Top" Margin="0,26,0,0" RenderTransformOrigin="0.5,0.5"/>
-			</Grid>
-			<Grid HorizontalAlignment="Center" Height="250" VerticalAlignment="Top" Width="3" Margin="248.5,0" RenderTransformOrigin="0.5,1">
-				<Grid.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform Angle="102"/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Grid.RenderTransform>
-				<Rectangle Fill="Black" Height="5" Stroke="Black" VerticalAlignment="Top" Margin="0,26,0,0" RenderTransformOrigin="0.5,0.5"/>
-			</Grid>
-			<Grid HorizontalAlignment="Center" Height="250" VerticalAlignment="Top" Width="3" Margin="248.5,0" RenderTransformOrigin="0.5,1">
-				<Grid.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform Angle="108"/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Grid.RenderTransform>
-				<Rectangle Fill="Black" Height="5" Stroke="Black" VerticalAlignment="Top" Margin="0,26,0,0" RenderTransformOrigin="0.5,0.5"/>
-			</Grid>
-			<Grid HorizontalAlignment="Center" Height="250" VerticalAlignment="Top" Width="3" Margin="248.5,0" RenderTransformOrigin="0.5,1">
-				<Grid.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform Angle="114"/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Grid.RenderTransform>
-				<Rectangle Fill="Black" Height="5" Stroke="Black" VerticalAlignment="Top" Margin="0,26,0,0" RenderTransformOrigin="0.5,0.5"/>
-			</Grid>
-			<Grid HorizontalAlignment="Center" Height="250" VerticalAlignment="Top" Width="3" Margin="248.5,0" RenderTransformOrigin="0.5,1">
-				<Grid.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform Angle="126"/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Grid.RenderTransform>
-				<Rectangle Fill="Black" Height="5" Stroke="Black" VerticalAlignment="Top" Margin="0,26,0,0" RenderTransformOrigin="0.5,0.5"/>
-			</Grid>
-			<Grid HorizontalAlignment="Center" Height="250" VerticalAlignment="Top" Width="3" Margin="248.5,0" RenderTransformOrigin="0.5,1">
-				<Grid.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform Angle="132"/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Grid.RenderTransform>
-				<Rectangle Fill="Black" Height="5" Stroke="Black" VerticalAlignment="Top" Margin="0,26,0,0" RenderTransformOrigin="0.5,0.5"/>
-			</Grid>
-			<Grid HorizontalAlignment="Center" Height="250" VerticalAlignment="Top" Width="3" Margin="248.5,0" RenderTransformOrigin="0.5,1">
-				<Grid.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform Angle="138"/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Grid.RenderTransform>
-				<Rectangle Fill="Black" Height="5" Stroke="Black" VerticalAlignment="Top" Margin="0,26,0,0" RenderTransformOrigin="0.5,0.5"/>
-			</Grid>
-			<Grid HorizontalAlignment="Center" Height="250" VerticalAlignment="Top" Width="3" Margin="248.5,0" RenderTransformOrigin="0.5,1">
-				<Grid.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform Angle="144"/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Grid.RenderTransform>
-				<Rectangle Fill="Black" Height="5" Stroke="Black" VerticalAlignment="Top" Margin="0,26,0,0" RenderTransformOrigin="0.5,0.5"/>
-			</Grid>
-			<Grid HorizontalAlignment="Center" Height="250" VerticalAlignment="Top" Width="3" Margin="248.5,0" RenderTransformOrigin="0.5,1">
-				<Grid.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform Angle="156"/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Grid.RenderTransform>
-				<Rectangle Fill="Black" Height="5" Stroke="Black" VerticalAlignment="Top" Margin="0,26,0,0" RenderTransformOrigin="0.5,0.5"/>
-			</Grid>
-			<Grid HorizontalAlignment="Center" Height="250" VerticalAlignment="Top" Width="3" Margin="248.5,0" RenderTransformOrigin="0.5,1">
-				<Grid.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform Angle="162"/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Grid.RenderTransform>
-				<Rectangle Fill="Black" Height="5" Stroke="Black" VerticalAlignment="Top" Margin="0,26,0,0" RenderTransformOrigin="0.5,0.5"/>
-			</Grid>
-			<Grid HorizontalAlignment="Center" Height="250" VerticalAlignment="Top" Width="3" Margin="248.5,0" RenderTransformOrigin="0.5,1">
-				<Grid.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform Angle="168"/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Grid.RenderTransform>
-				<Rectangle Fill="Black" Height="5" Stroke="Black" VerticalAlignment="Top" Margin="0,26,0,0" RenderTransformOrigin="0.5,0.5"/>
-			</Grid>
-			<Grid HorizontalAlignment="Center" Height="250" VerticalAlignment="Top" Width="3" Margin="248.5,0" RenderTransformOrigin="0.5,1">
-				<Grid.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform Angle="174"/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Grid.RenderTransform>
-				<Rectangle Fill="Black" Height="5" Stroke="Black" VerticalAlignment="Top" Margin="0,26,0,0" RenderTransformOrigin="0.5,0.5"/>
-			</Grid>
-			<Grid HorizontalAlignment="Center" Height="250" VerticalAlignment="Top" Width="3" Margin="248.5,0" RenderTransformOrigin="0.5,1">
-				<Grid.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform Angle="186"/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Grid.RenderTransform>
-				<Rectangle Fill="Black" Height="5" Stroke="Black" VerticalAlignment="Top" Margin="0,26,0,0" RenderTransformOrigin="0.5,0.5"/>
-			</Grid>
-			<Grid HorizontalAlignment="Center" Height="250" VerticalAlignment="Top" Width="3" Margin="248.5,0" RenderTransformOrigin="0.5,1">
-				<Grid.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform Angle="192"/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Grid.RenderTransform>
-				<Rectangle Fill="Black" Height="5" Stroke="Black" VerticalAlignment="Top" Margin="0,26,0,0" RenderTransformOrigin="0.5,0.5"/>
-			</Grid>
-			<Grid HorizontalAlignment="Center" Height="250" VerticalAlignment="Top" Width="3" Margin="248.5,0" RenderTransformOrigin="0.5,1">
-				<Grid.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform Angle="198"/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Grid.RenderTransform>
-				<Rectangle Fill="Black" Height="5" Stroke="Black" VerticalAlignment="Top" Margin="0,26,0,0" RenderTransformOrigin="0.5,0.5"/>
-			</Grid>
-			<Grid HorizontalAlignment="Center" Height="250" VerticalAlignment="Top" Width="3" Margin="248.5,0" RenderTransformOrigin="0.5,1">
-				<Grid.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform Angle="204"/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Grid.RenderTransform>
-				<Rectangle Fill="Black" Height="5" Stroke="Black" VerticalAlignment="Top" Margin="0,26,0,0" RenderTransformOrigin="0.5,0.5"/>
-			</Grid>
-			<Grid HorizontalAlignment="Center" Height="250" VerticalAlignment="Top" Width="3" Margin="248.5,0" RenderTransformOrigin="0.5,1">
-				<Grid.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform Angle="216"/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Grid.RenderTransform>
-				<Rectangle Fill="Black" Height="5" Stroke="Black" VerticalAlignment="Top" Margin="0,26,0,0" RenderTransformOrigin="0.5,0.5"/>
-			</Grid>
-			<Grid HorizontalAlignment="Center" Height="250" VerticalAlignment="Top" Width="3" Margin="248.5,0" RenderTransformOrigin="0.5,1">
-				<Grid.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform Angle="222"/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Grid.RenderTransform>
-				<Rectangle Fill="Black" Height="5" Stroke="Black" VerticalAlignment="Top" Margin="0,26,0,0" RenderTransformOrigin="0.5,0.5"/>
-			</Grid>
-			<Grid HorizontalAlignment="Center" Height="250" VerticalAlignment="Top" Width="3" Margin="248.5,0" RenderTransformOrigin="0.5,1">
-				<Grid.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform Angle="228"/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Grid.RenderTransform>
-				<Rectangle Fill="Black" Height="5" Stroke="Black" VerticalAlignment="Top" Margin="0,26,0,0" RenderTransformOrigin="0.5,0.5"/>
-			</Grid>
-			<Grid HorizontalAlignment="Center" Height="250" VerticalAlignment="Top" Width="3" Margin="248.5,0" RenderTransformOrigin="0.5,1">
-				<Grid.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform Angle="234"/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Grid.RenderTransform>
-				<Rectangle Fill="Black" Height="5" Stroke="Black" VerticalAlignment="Top" Margin="0,26,0,0" RenderTransformOrigin="0.5,0.5"/>
-			</Grid>
-			<Grid HorizontalAlignment="Center" Height="250" VerticalAlignment="Top" Width="3" Margin="248.5,0" RenderTransformOrigin="0.5,1">
-				<Grid.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform Angle="246"/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Grid.RenderTransform>
-				<Rectangle Fill="Black" Height="5" Stroke="Black" VerticalAlignment="Top" Margin="0,26,0,0" RenderTransformOrigin="0.5,0.5"/>
-			</Grid>
-			<Grid HorizontalAlignment="Center" Height="250" VerticalAlignment="Top" Width="3" Margin="248.5,0" RenderTransformOrigin="0.5,1">
-				<Grid.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform Angle="252"/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Grid.RenderTransform>
-				<Rectangle Fill="Black" Height="5" Stroke="Black" VerticalAlignment="Top" Margin="0,26,0,0" RenderTransformOrigin="0.5,0.5"/>
-			</Grid>
-			<Grid HorizontalAlignment="Center" Height="250" VerticalAlignment="Top" Width="3" Margin="248.5,0" RenderTransformOrigin="0.5,1">
-				<Grid.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform Angle="258"/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Grid.RenderTransform>
-				<Rectangle Fill="Black" Height="5" Stroke="Black" VerticalAlignment="Top" Margin="0,26,0,0" RenderTransformOrigin="0.5,0.5"/>
-			</Grid>
-			<Grid HorizontalAlignment="Center" Height="250" VerticalAlignment="Top" Width="3" Margin="248.5,0" RenderTransformOrigin="0.5,1">
-				<Grid.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform Angle="264"/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Grid.RenderTransform>
-				<Rectangle Fill="Black" Height="5" Stroke="Black" VerticalAlignment="Top" Margin="0,26,0,0" RenderTransformOrigin="0.5,0.5"/>
-			</Grid>
-			<Grid HorizontalAlignment="Center" Height="250" VerticalAlignment="Top" Width="3" Margin="248.5,0" RenderTransformOrigin="0.5,1">
-				<Grid.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform Angle="276"/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Grid.RenderTransform>
-				<Rectangle Fill="Black" Height="5" Stroke="Black" VerticalAlignment="Top" Margin="0,26,0,0" RenderTransformOrigin="0.5,0.5"/>
-			</Grid>
-			<Grid HorizontalAlignment="Center" Height="250" VerticalAlignment="Top" Width="3" Margin="248.5,0" RenderTransformOrigin="0.5,1">
-				<Grid.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform Angle="282"/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Grid.RenderTransform>
-				<Rectangle Fill="Black" Height="5" Stroke="Black" VerticalAlignment="Top" Margin="0,26,0,0" RenderTransformOrigin="0.5,0.5"/>
-			</Grid>
-			<Grid HorizontalAlignment="Center" Height="250" VerticalAlignment="Top" Width="3" Margin="248.5,0" RenderTransformOrigin="0.5,1">
-				<Grid.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform Angle="288"/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Grid.RenderTransform>
-				<Rectangle Fill="Black" Height="5" Stroke="Black" VerticalAlignment="Top" Margin="0,26,0,0" RenderTransformOrigin="0.5,0.5"/>
-			</Grid>
-			<Grid HorizontalAlignment="Center" Height="250" VerticalAlignment="Top" Width="3" Margin="248.5,0" RenderTransformOrigin="0.5,1">
-				<Grid.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform Angle="294"/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Grid.RenderTransform>
-				<Rectangle Fill="Black" Height="5" Stroke="Black" VerticalAlignment="Top" Margin="0,26,0,0" RenderTransformOrigin="0.5,0.5"/>
-			</Grid>
-			<Grid HorizontalAlignment="Center" Height="250" VerticalAlignment="Top" Width="3" Margin="248.5,0" RenderTransformOrigin="0.5,1">
-				<Grid.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform Angle="306"/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Grid.RenderTransform>
-				<Rectangle Fill="Black" Height="5" Stroke="Black" VerticalAlignment="Top" Margin="0,26,0,0" RenderTransformOrigin="0.5,0.5"/>
-			</Grid>
-			<Grid HorizontalAlignment="Center" Height="250" VerticalAlignment="Top" Width="3" Margin="248.5,0" RenderTransformOrigin="0.5,1">
-				<Grid.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform Angle="312"/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Grid.RenderTransform>
-				<Rectangle Fill="Black" Height="5" Stroke="Black" VerticalAlignment="Top" Margin="0,26,0,0" RenderTransformOrigin="0.5,0.5"/>
-			</Grid>
-			<Grid HorizontalAlignment="Center" Height="250" VerticalAlignment="Top" Width="3" Margin="248.5,0" RenderTransformOrigin="0.5,1">
-				<Grid.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform Angle="318"/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Grid.RenderTransform>
-				<Rectangle Fill="Black" Height="5" Stroke="Black" VerticalAlignment="Top" Margin="0,26,0,0" RenderTransformOrigin="0.5,0.5"/>
-			</Grid>
-			<Grid HorizontalAlignment="Center" Height="250" VerticalAlignment="Top" Width="3" Margin="248.5,0" RenderTransformOrigin="0.5,1">
-				<Grid.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform Angle="324"/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Grid.RenderTransform>
-				<Rectangle Fill="Black" Height="5" Stroke="Black" VerticalAlignment="Top" Margin="0,26,0,0" RenderTransformOrigin="0.5,0.5"/>
-			</Grid>
-			<Grid HorizontalAlignment="Center" Height="250" VerticalAlignment="Top" Width="3" Margin="248.5,0" RenderTransformOrigin="0.5,1">
-				<Grid.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform Angle="336"/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Grid.RenderTransform>
-				<Rectangle Fill="Black" Height="5" Stroke="Black" VerticalAlignment="Top" Margin="0,26,0,0" RenderTransformOrigin="0.5,0.5"/>
-			</Grid>
-			<Grid HorizontalAlignment="Center" Height="250" VerticalAlignment="Top" Width="3" Margin="248.5,0" RenderTransformOrigin="0.5,1">
-				<Grid.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform Angle="342"/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Grid.RenderTransform>
-				<Rectangle Fill="Black" Height="5" Stroke="Black" VerticalAlignment="Top" Margin="0,26,0,0" RenderTransformOrigin="0.5,0.5"/>
-			</Grid>
-			<Grid HorizontalAlignment="Center" Height="250" VerticalAlignment="Top" Width="3" Margin="248.5,0" RenderTransformOrigin="0.5,1">
-				<Grid.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform Angle="348"/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Grid.RenderTransform>
-				<Rectangle Fill="Black" Height="5" Stroke="Black" VerticalAlignment="Top" Margin="0,26,0,0" RenderTransformOrigin="0.5,0.5"/>
-			</Grid>
-			<Grid HorizontalAlignment="Center" Height="250" VerticalAlignment="Top" Width="3" Margin="248.5,0" RenderTransformOrigin="0.5,1">
-				<Grid.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform Angle="354"/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Grid.RenderTransform>
-				<Rectangle Fill="Black" Height="5" Stroke="Black" VerticalAlignment="Top" Margin="0,26,0,0" RenderTransformOrigin="0.5,0.5"/>
-			</Grid>
-			<ed:RegularPolygon Fill="#FFC34F02" HorizontalAlignment="Center" Stretch="Fill" Stroke="Black" Width="15" Height="150" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.9" PointCount="5" Margin="0,115,0,0">
-				<ed:RegularPolygon.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform Angle="{Binding HourAngle, Mode=OneWay}"/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</ed:RegularPolygon.RenderTransform>
-			</ed:RegularPolygon>
-			<ed:RegularPolygon Fill="#FF335139" HorizontalAlignment="Center" Stretch="Fill" Stroke="Black" Width="10" Height="200" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.935" PointCount="5" Margin="0,65,0,0">
-				<ed:RegularPolygon.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform Angle="{Binding MinuteAngle, Mode=OneWay}"/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</ed:RegularPolygon.RenderTransform>
-			</ed:RegularPolygon>
-			<ed:RegularPolygon Fill="#FFBD16DA" HorizontalAlignment="Center" Stretch="Fill" Stroke="Black" Width="5" Height="250" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.943" PointCount="5" Margin="0,15,0,0">
-				<ed:RegularPolygon.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform Angle="{Binding SecondAngle, Mode=OneWay}"/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</ed:RegularPolygon.RenderTransform>
-			</ed:RegularPolygon>
+		<ed:Arc ArcThickness="1" ArcThicknessUnit="Percent" EndAngle="360" Fill="#FFCDCDCD" Stretch="None" Stroke="Black"/>
+		<ItemsControl Margin="0" ItemsPanel="{DynamicResource ItemsPanelTemplate1}" ItemTemplate="{DynamicResource DataTemplate1}">
+			<ItemsControl.Resources>
+				<ItemsPanelTemplate x:Key="ItemsPanelTemplate1">
+					<Grid Height="Auto" IsItemsHost="True"/>
+				</ItemsPanelTemplate>
+				<DataTemplate x:Key="DataTemplate1">
+					<Grid Width="500" Height="500">
+						<Grid HorizontalAlignment="Stretch" Margin="0" RenderTransformOrigin="0.5,0.5">
+							<Grid.RenderTransform>
+								<TransformGroup>
+									<ScaleTransform/>
+									<SkewTransform/>
+									<RotateTransform Angle="{Binding Mode=OneWay}"/>
+									<TranslateTransform/>
+								</TransformGroup>
+							</Grid.RenderTransform>
+							<Rectangle Fill="Black" HorizontalAlignment="Center" Height="7" Stroke="Black" VerticalAlignment="Top" Width="5" Margin="0,20,0,0"/>
+						</Grid>
+					</Grid>
+				</DataTemplate>
+			</ItemsControl.Resources>
+			<ItemsControl.ItemsSource>
+				<Binding Mode="OneWay" Source="{StaticResource Angles}"/>
+			</ItemsControl.ItemsSource>
+		</ItemsControl>
+		<ItemsControl Margin="0" ItemsPanel="{DynamicResource ItemsPanelTemplate1}" ItemTemplate="{DynamicResource DataTemplate1}">
+			<ItemsControl.Resources>
+				<ItemsPanelTemplate x:Key="ItemsPanelTemplate1">
+					<Grid Height="Auto" IsItemsHost="True"/>
+				</ItemsPanelTemplate>
+				<DataTemplate x:Key="DataTemplate1">
+					<Grid Width="500" Height="500">
+						<Grid HorizontalAlignment="Stretch" Margin="0" RenderTransformOrigin="0.5,0.5">
+							<Grid.RenderTransform>
+								<TransformGroup>
+									<ScaleTransform/>
+									<SkewTransform/>
+									<RotateTransform Angle="{Binding Mode=OneWay}"/>
+									<TranslateTransform/>
+								</TransformGroup>
+							</Grid.RenderTransform>
+							<Rectangle Fill="Black" HorizontalAlignment="Center" Height="10" Stroke="Black" VerticalAlignment="Top" Width="7" Margin="0,17,0,0"/>
+						</Grid>
+					</Grid>
+				</DataTemplate>
+			</ItemsControl.Resources>
+			<ItemsControl.ItemsSource>
+				<Binding Mode="OneWay" Source="{StaticResource Angles2}"/>
+			</ItemsControl.ItemsSource>
+		</ItemsControl>
+		<Grid RenderTransformOrigin="0.5,0.5">
+			<Grid.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform Angle="{Binding HourAngle}"/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Grid.RenderTransform>
+			<ed:RegularPolygon Fill="#FF93831F" HorizontalAlignment="Center" Height="175" InnerRadius="1" PointCount="5" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="30" Margin="0,150,0,0"/>
 		</Grid>
-		<ed:Arc ArcThickness="1" ArcThicknessUnit="Percent" EndAngle="360" Fill="Black" HorizontalAlignment="Center" Height="20" Stretch="None" Stroke="Black" VerticalAlignment="Center" Width="20"/>
+		<Grid RenderTransformOrigin="0.5,0.5">
+			<Grid.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform Angle="{Binding MinuteAngle}"/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Grid.RenderTransform>
+			<ed:RegularPolygon Fill="#FF933C1F" HorizontalAlignment="Center" Height="275" InnerRadius="1" PointCount="5" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="25" Margin="0,50,0,0"/>
+		</Grid>
+		<Grid RenderTransformOrigin="0.5,0.5">
+			<Grid.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform Angle="{Binding SecondAngle}"/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Grid.RenderTransform>
+			<ed:RegularPolygon Fill="#FF0B2A34" HorizontalAlignment="Center" Height="275" InnerRadius="1" PointCount="5" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="10" Margin="0,50,0,0"/>
+		</Grid>
+		<ed:Arc ArcThickness="1" ArcThicknessUnit="Percent" EndAngle="360" Fill="Black" HorizontalAlignment="Center" Height="40" Stretch="None" Stroke="Black" VerticalAlignment="Center" Width="40"/>
 
 	</Grid>
 </Window>
